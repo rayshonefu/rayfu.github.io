@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#hide").click(function(){
+	    	$("p").hide();
+	    });
+	    $("#show").click(function(){
+	    	$("p").show();
+		});
+		$("#arrow").css("background-color","#a3cfe5")
+	});
+	</script>
+	<title>Level 2</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles2.css">
+</head>
+<body>
+	<div class="main_container">
+		<img class="displayed" src="assets/images/buttons.jpg" width="70%" height ="80%">
+	</div>
+
+	<div id="night" class="side_panel">
+		<div id="arrow">
+		</div>
+		<div class="container">
+			<div class="title">Clues</div>
+			<div class="separator"></div>
+			<div class="menu">
+				<div class="item">
+					<p> Sorry no clues! </p>
+					<button id="hide">Hide</button>
+					<button id="show">Show</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

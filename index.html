@@ -1,0 +1,49 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#night").hover(function(){
+			$("#night").css("background-color","#111");
+			
+			},function(){
+			$("#night").css("background-color","#222");
+		});
+		$("#night").hover(function(){
+			$("#day").css("background-color","#8ca6b8");
+			
+			},function(){
+			$("#day").css("background-color","#a3cfe5");
+		});
+		$("button").click(function(){
+			$("#left").text("Good Luck");
+		});
+	});	
+	</script>
+	<title>I SPY</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+	<button class="button" id="clicker">Rayshone Fu</button>
+	<div id="day" class="panel">
+		<div class="container">
+			<div class="title" id="left">I</div>
+			<div class="separator"></div>
+			<div class="menu">
+				<div class="item"> <a class="link" href="./levelOne.html" style="color:black">Level 1</a></div>
+			</div>
+		</div>
+	</div>
+	<div id="night" class="panel">
+		<div id="arrow">
+		</div>
+		<div class="container">
+			<div class="title" id="right">SPY</div>
+			<div class="separator"></div>
+			<div class="menu">
+				<div class="item"><a class="link" href="./levelTwo.html" style="color:white">Level 2</a></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
